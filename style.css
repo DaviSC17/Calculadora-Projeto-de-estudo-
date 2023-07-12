@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bacasime Antique", serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+section {
+  width: 350px;
+  height: 500px;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Header Calculator */
+
+.Header {
+  width: 98%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
+.Header > h1 {
+  color: whitesmoke;
+}
+
+/* Body Calculator */
+
+.Body {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Inputs {
+  height: 50px;
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.Inputs > span:first-child {
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 0 25px 0 0;
+  font-weight: bold;
+}
+
+.Inputs > span:nth-of-type(2) {
+  color: whitesmoke;
+  font-size: 20px;
+  position: absolute;
+  display: flex;
+  left: 80%;
+  margin: 0 25px 0 0;
+  font-weight: bold;
+  cursor: default;
+}
+
+.Inputs > input {
+  height: 30px;
+  width: 120px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  border-radius: 4px;
+  color: whitesmoke;
+  font-size: 16px;
+  padding: 4px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.Button {
+  display: flex;
+  width: 70%;
+  height: 40px;
+}
+
+.Button > input {
+  width: 100%;
+  font-size: 18px;
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.Result {
+  display: flex;
+  height: 80px;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border-top: 1px solid whitesmoke;
+  border-bottom: 1px solid whitesmoke;
+  transition: all 1s;
+  font-size: 20px;
+}
+
+.Hidden {
+  display: none;
+  
+}
+
+.IMC {
+  display: flex;
+  width: 70%;
+  flex-direction: column;
+  height: 90%;
+  justify-content: space-around;
+  align-items: center;
+  cursor: default;
+}
+
+.IMC > span:first-child {
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+}
+
+.IMC > span:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.Text-Imc {
+  height: 90%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+
+.Text-Imc > span {
+  font-size: 15px;
+  font-weight: bold;
+  color: whitesmoke;
+  letter-spacing: 1px;
+}
+
+.Info {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+}
+
+.Info > a {
+  text-decoration: none;
+  color: darkgreen;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Info > a > i {
+  margin: 0 0 0 5px;
+}
+
+/* Animation */
+section > span:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to right, transparent, whitesmoke);
+  animation: animar1 1.6s linear infinite;
+}
+
+@keyframes animar1 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+section > span:nth-of-type(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent, whitesmoke);
+  animation: animar2 1.6s linear infinite;
+  animation-delay: 0.8s;
+}
+
+@keyframes animar2 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(100%);
+  }
+}
+
+section > span:nth-of-type(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(to left, transparent, whitesmoke);
+  animation: animar3 1.6s linear infinite;
+}
+
+@keyframes animar3 {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+section > span:last-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background: linear-gradient(to top, transparent, whitesmoke);
+  animation: animar4 1.6s linear infinite;
+  animation-delay: 0.8s;
+}
+
+@keyframes animar4 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(-100%);
+  }
+}

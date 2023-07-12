@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../FontAwesome/css/all.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <main>
+        <section>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <div class="Header">
+                <h1>Calculadora - IMC</h1>
+            </div>
+            <div class="Body">
+                <div class="Inputs">
+                    <span>Altura:</span>
+                   <span>M</span>
+                    <input maxlength="4" id="Altura" type="text">
+                </div>
+                <div class="Inputs">
+                    <span>Peso:</span>
+                    <input maxlength="3" id="peso" type="text" >
+                    <span>Kg</span>                    
+                </div>
+
+                <div class="Button">
+                    <input type="submit" id="button" value="Calcular">
+                </div>
+
+                <div class="Hidden" id="Result">
+                    <div class="IMC">
+                        <span id="Imc">18.8</span>
+                        <span>Seu IMC</span>
+                    </div>
+                    <div class="Text-Imc">
+                        <span id="text"></span>
+                    </div>
+                </div>
+                <div class="Hidden" id="info">
+                    <a target="_blank" href="https://www.saude.rj.gov.br/obesidade/noticias/2019/03/imc-voce-sabe-o-que-o-indice-de-massa-corporal-diz-sobre-sua-saude">Saiba mais sobre IMC <i class="fa-sharp fa-regular fa-share-from-square" style="color: darkgreen;"></i></a>
+                    
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+</html>
